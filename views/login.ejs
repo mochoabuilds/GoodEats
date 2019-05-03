@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+<style type="text/css">
+    body { 
+        padding-top: 70px; 
+    }
+  </style>
+
+<h1 align=center>Login</h1>
+    <br>
+    <form id="login_form" action="/login" method="POST" align=center>
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <button>Login</button>
+    </form>
+
+<% include ./partials/footer %>  

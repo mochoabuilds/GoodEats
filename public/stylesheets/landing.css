@@ -1,0 +1,74 @@
+body {
+    background-color: #000;
+}
+
+h2 {
+    color: black;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 50vh;
+}
+
+cd
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /*starts images faded out*/
+  opacity: 0; 
+  /*ensures background images placed behind text and button*/
+  z-index: 0;
+  /*tells animations to be same speed from beginning to end for specified time and loop forever*/
+  animation: imageAnimation 11s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/24/Still_Life_with_Fish_1864_Edouard_Manet.jpg");
+}
+.slideshow li:nth-child(2) { 
+  background-image: url("https://lakeimagesweb.artic.edu/iiif/73ce58fa-a594-cddd-700c-77b49512ddbe/full/!800,800/0/default.jpg");
+  animation-delay: 5s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

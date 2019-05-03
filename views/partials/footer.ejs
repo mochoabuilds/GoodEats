@@ -1,0 +1,28 @@
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+
+    <script>
+        (function($) {
+            "use strict"; // Start of use strict
+        
+            // Closes the Responsive Menu on Menu Item Click
+            $('.navbar-collapse ul li a').click(function() {
+                $('.navbar-toggle:visible').click();
+            });
+        
+            // Offset for Main Navigation
+            $('#mainNav').affix({
+                offset: {
+                    top: 50
+                }
+            })
+        
+        })(jQuery); // End of use strict
+    </script>
+    </body>
+</html>
