@@ -15,7 +15,7 @@ var commentRoutes   = require("./routes/comments"),
     recipeRoutes    = require("./routes/recipes"),
     indexRoutes     = require("./routes/index");
 
-mongoose.connect("mongodb+srv://mochoabuilds:kangaroo@goodeats-r3whh.mongodb.net/test?retryWrites=true", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://####################@goodeats-r3whh.mongodb.net/test?retryWrites=true", {useNewUrlParser: true});
 // mongoose.connect("mongodb://localhost:27017/good_eats", {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({extended:true})); 
